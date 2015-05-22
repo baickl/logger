@@ -8,8 +8,15 @@
     3.支持控制台不同日志不同颜色显示，DEBUG和INFO日志默认输出白色，WARN输出黄色，ERROR输出红色
     4.支持捕获异常操作，并将异常信息及出错时运行堆栈保存在exception目录中，按时间存放
     
+# 获取
+    go get github.com/baickl/logger
+    
 
 # 示例
+
+    import(
+        "github.com/baickl/logger"
+    )
 
     //初始化
     logger.Initialize("./log","LoginServer") 
