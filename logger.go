@@ -306,6 +306,16 @@ func V(level LEVEL) Verbose {
 	return Verbose(false)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Debug
+ @history
+ 	2015-05-22_09:32 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Debug(arg interface{}) {
 	if !v {
 		return
@@ -324,6 +334,16 @@ func (v Verbose) Debug(arg interface{}) {
 
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Info
+ @history
+ 	2015-05-22_09:32 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Info(arg interface{}) {
 	if !v {
 		return
@@ -342,6 +362,16 @@ func (v Verbose) Info(arg interface{}) {
 
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Warn
+ @history
+ 	2015-05-22_09:32 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Warn(arg interface{}) {
 	if !v {
 		return
@@ -360,6 +390,16 @@ func (v Verbose) Warn(arg interface{}) {
 
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Error
+ @history
+ 	2015-05-22_09:32 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Error(arg interface{}) {
 	if !v {
 		return
@@ -377,6 +417,16 @@ func (v Verbose) Error(arg interface{}) {
 	console(ERROR, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Fatal
+ @history
+ 	2015-05-22_09:32 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Fatal(arg interface{}) {
 	if !v {
 		return
@@ -394,6 +444,16 @@ func (v Verbose) Fatal(arg interface{}) {
 	console(FATAL, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Debugf
+ @history
+ 	2015-05-22_09:33 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Debugf(format string, args ...interface{}) {
 	if !v {
 		return
@@ -411,6 +471,16 @@ func (v Verbose) Debugf(format string, args ...interface{}) {
 	console(DEBUG, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Info
+ @history
+ 	2015-05-22_09:33 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Infof(format string, args ...interface{}) {
 	if !v {
 		return
@@ -428,6 +498,16 @@ func (v Verbose) Infof(format string, args ...interface{}) {
 	console(INFO, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Warnf
+ @history
+ 	2015-05-22_09:33 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Warnf(format string, args ...interface{}) {
 	if !v {
 		return
@@ -445,6 +525,16 @@ func (v Verbose) Warnf(format string, args ...interface{}) {
 	console(WARN, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Errorf
+ @history
+ 	2015-05-22_09:33 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Errorf(format string, args ...interface{}) {
 	if !v {
 		return
@@ -462,6 +552,16 @@ func (v Verbose) Errorf(format string, args ...interface{}) {
 	console(ERROR, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Fatalf
+ @history
+ 	2015-05-22_09:33 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Fatalf(format string, args ...interface{}) {
 	if !v {
 		return
@@ -479,6 +579,16 @@ func (v Verbose) Fatalf(format string, args ...interface{}) {
 	console(FATAL, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Debugln
+ @history
+ 	2015-05-22_09:34 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Debugln(args ...interface{}) {
 	if !v {
 		return
@@ -496,6 +606,16 @@ func (v Verbose) Debugln(args ...interface{}) {
 	console(DEBUG, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Infoln
+ @history
+ 	2015-05-22_09:34 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Infoln(args ...interface{}) {
 	if !v {
 		return
@@ -513,6 +633,16 @@ func (v Verbose) Infoln(args ...interface{}) {
 	console(INFO, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Warnln
+ @history
+ 	2015-05-22_09:34 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Warnln(args ...interface{}) {
 	if !v {
 		return
@@ -530,6 +660,16 @@ func (v Verbose) Warnln(args ...interface{}) {
 	console(WARN, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Errorln
+ @history
+ 	2015-05-22_09:34 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Errorln(args ...interface{}) {
 	if !v {
 		return
@@ -547,6 +687,16 @@ func (v Verbose) Errorln(args ...interface{}) {
 	console(ERROR, context)
 }
 
+/******************************************************************************
+ @brief
+ 	输出Debug日志
+ @author
+ 	chenzhiguo
+ @see
+ 	logger.Fatalln
+ @history
+ 	2015-05-22_09:34 	chenzhiguo		创建
+*******************************************************************************/
 func (v Verbose) Fatalln(args ...interface{}) {
 	if !v {
 		return
